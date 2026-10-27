@@ -1,0 +1,84 @@
+.share-modal-content {
+  max-width: 520px;
+}
+
+.share-modal-body {
+  padding: 24px;
+}
+
+.share-listing-preview {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  margin-bottom: 24px;
+}
+
+.share-preview-thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.share-preview-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.share-preview-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.share-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.share-channel-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--border-main);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.share-channel-btn:hover {
+  background-color: var(--bg-subtle);
+  border-color: var(--text-dark);
+}
+
+.channel-icon-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--bg-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-circle {
+  background-color: #25D366;
+}
+
+.email-circle {
+  background-color: #EA4335;
+}
+
+.x-circle {
+  background-color: #000000;
+}
