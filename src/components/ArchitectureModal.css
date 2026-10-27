@@ -1,0 +1,129 @@
+.arch-modal-content {
+  max-width: 1080px;
+  width: 95%;
+  height: 90vh;
+}
+
+.arch-modal-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.arch-modal-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.arch-modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.arch-modal-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.arch-modal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.arch-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #F0F4FF;
+  border: 1px solid #C7D7FE;
+  color: #3538CD;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.arch-download-btn:hover {
+  background-color: #E0EAFF;
+}
+
+.arch-modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+  background-color: #0B1120;
+}
+
+.arch-diagram-viewport {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 1px solid #334155;
+  margin-bottom: 24px;
+  background-color: #0F172A;
+}
+
+.arch-diagram-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.arch-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.arch-pillar-card {
+  background-color: #1E293B;
+  border: 1px solid #334155;
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+}
+
+.pillar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.pillar-header h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #F8FAFC;
+}
+
+.arch-pillar-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #94A3B8;
+}
+
+.arch-pillar-card strong {
+  color: #E2E8F0;
+}
+
+.arch-pillar-card code {
+  background: #0F172A;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #F43F5E;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .arch-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}
