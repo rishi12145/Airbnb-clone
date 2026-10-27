@@ -1,0 +1,275 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 960" width="100%" height="100%" style="background: #0F172A; font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#FF385C" />
+      <stop offset="100%" stopColor="#D70466" />
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1E293B" />
+      <stop offset="100%" stopColor="#0F172A" />
+    </linearGradient>
+    <linearGradient id="glowBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#38BDF8" />
+      <stop offset="100%" stopColor="#818CF8" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Title Header -->
+  <rect x="0" y="0" width="1400" height="90" fill="#090D16" />
+  <rect x="40" y="24" width="44" height="44" rx="10" fill="url(#headerGrad)" />
+  <path d="M62 34 C57 44 48 56 48 61 C48 66 52 70 56 70 C60 70 62 67 62 67 C62 67 64 70 68 70 C72 70 76 66 76 61 C76 56 67 44 62 34 Z M62 58 C59 58 57 56 57 53 C57 50 59 48 62 48 C65 48 67 50 67 53 C67 56 65 58 62 58 Z" fill="#FFFFFF" />
+  
+  <text x="100" y="44" fill="#FFFFFF" font-size="22" font-weight="800" letter-spacing="-0.5">AIRBNB PRODUCTION SCALE ARCHITECTURE</text>
+  <text x="100" y="66" fill="#94A3B8" font-size="13" font-weight="500">Global High-Throughput Vacation-Rental Marketplace · Scalability Strategy (Frontend, Backend, Search, Data, CI/CD)</text>
+
+  <rect x="1170" y="28" width="190" height="36" rx="18" fill="#1E293B" stroke="#334155" />
+  <circle cx="1190" cy="46" r="5" fill="#10B981" />
+  <text x="1205" y="51" fill="#E2E8F0" font-size="12" font-weight="600">Enterprise Scale Tier</text>
+
+  <!-- ================= TIER 1: CLIENTS & GLOBAL EDGE ================= -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="1320" height="110" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="16" y="16" width="180" height="26" rx="6" fill="#0284C7" opacity="0.2" />
+    <text x="24" y="34" fill="#38BDF8" font-size="12" font-weight="700">1. CLIENTS &amp; EDGE CDN</text>
+
+    <!-- Client Apps -->
+    <g transform="translate(24, 48)">
+      <rect x="0" y="0" width="220" height="46" rx="8" fill="#0F172A" stroke="#475569" />
+      <text x="14" y="22" fill="#F8FAFC" font-size="13" font-weight="600">Web App (React/Vite)</text>
+      <text x="14" y="38" fill="#94A3B8" font-size="11">Desktop &amp; Mobile Responsive</text>
+    </g>
+
+    <g transform="translate(260, 48)">
+      <rect x="0" y="0" width="200" height="46" rx="8" fill="#0F172A" stroke="#475569" />
+      <text x="14" y="22" fill="#F8FAFC" font-size="13" font-weight="600">Mobile Apps</text>
+      <text x="14" y="38" fill="#94A3B8" font-size="11">iOS (Swift) / Android (Kotlin)</text>
+    </g>
+
+    <!-- Cloudflare Edge -->
+    <g transform="translate(480, 48)">
+      <rect x="0" y="0" width="280" height="46" rx="8" fill="#0F172A" stroke="#F59E0B" />
+      <text x="14" y="22" fill="#FBBF24" font-size="13" font-weight="600">Cloudflare Edge &amp; Anycast DNS</text>
+      <text x="14" y="38" fill="#94A3B8" font-size="11">Global 300+ PoPs · DDoS Shield · WAF</text>
+    </g>
+
+    <!-- Dynamic Image Optimization -->
+    <g transform="translate(780, 48)">
+      <rect x="0" y="0" width="260" height="46" rx="8" fill="#0F172A" stroke="#475569" />
+      <text x="14" y="22" fill="#F8FAFC" font-size="13" font-weight="600">Edge Image Optimization</text>
+      <text x="14" y="38" fill="#94A3B8" font-size="11">AVIF/WebP · Adaptive Bitrate</text>
+    </g>
+
+    <!-- GraphQL / REST Gateway -->
+    <g transform="translate(1060, 48)">
+      <rect x="0" y="0" width="236" height="46" rx="8" fill="#0F172A" stroke="#EC4899" />
+      <text x="14" y="22" fill="#F472B6" font-size="13" font-weight="600">Envoy / Kong API Gateway</text>
+      <text x="14" y="38" fill="#94A3B8" font-size="11">JWT Auth · Geo-Route · Rate Limit</text>
+    </g>
+  </g>
+
+  <!-- Arrow Down from Edge to Microservices -->
+  <path d="M700 220 L700 246" stroke="#38BDF8" stroke-width="2.5" stroke-dasharray="4,4" />
+  <polygon points="695,246 700,256 705,246" fill="#38BDF8" />
+
+  <!-- ================= TIER 2: MICROSERVICES CLUSTER ================= -->
+  <g transform="translate(40, 260)">
+    <rect x="0" y="0" width="1320" height="230" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="16" y="14" width="260" height="26" rx="6" fill="#8B5CF6" opacity="0.2" />
+    <text x="24" y="32" fill="#C084FC" font-size="12" font-weight="700">2. CORE BACKEND MICROSERVICES (KUBERNETES EKS / GKE)</text>
+
+    <!-- Service 1: Listing Service -->
+    <g transform="translate(24, 52)">
+      <rect x="0" y="0" width="236" height="76" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="1.2" />
+      <text x="16" y="26" fill="#38BDF8" font-size="14" font-weight="700">Listings Service</text>
+      <text x="16" y="46" fill="#94A3B8" font-size="11">CRUD, Room Taxonomy, Amenities</text>
+      <text x="16" y="62" fill="#64748B" font-size="10">Go / Node.js · gRPC + GraphQL</text>
+    </g>
+
+    <!-- Service 2: Search & Discovery -->
+    <g transform="translate(284, 52)">
+      <rect x="0" y="0" width="236" height="76" rx="8" fill="#0F172A" stroke="#10B981" stroke-width="1.2" />
+      <text x="16" y="26" fill="#34D399" font-size="14" font-weight="700">Search &amp; Discovery</text>
+      <text x="16" y="46" fill="#94A3B8" font-size="11">Geo-Spatial (H3), Vector Embeddings</text>
+      <text x="16" y="62" fill="#64748B" font-size="10">Rust / Java · Elasticsearch / Milvus</text>
+    </g>
+
+    <!-- Service 3: Booking & Reservations -->
+    <g transform="translate(544, 52)">
+      <rect x="0" y="0" width="236" height="76" rx="8" fill="#0F172A" stroke="#FF385C" stroke-width="1.5" />
+      <text x="16" y="26" fill="#FF385C" font-size="14" font-weight="700">Booking Engine</text>
+      <text x="16" y="46" fill="#94A3B8" font-size="11">Saga Pattern, Double-Booking Lock</text>
+      <text x="16" y="62" fill="#64748B" font-size="10">Java / Go · Distributed Redlock</text>
+    </g>
+
+    <!-- Service 4: Dynamic Pricing -->
+    <g transform="translate(804, 52)">
+      <rect x="0" y="0" width="236" height="76" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-width="1.2" />
+      <text x="16" y="26" fill="#FBBF24" font-size="14" font-weight="700">Dynamic Pricing Engine</text>
+      <text x="16" y="46" fill="#94A3B8" font-size="11">Seasonal Yield, Occupancy ML Model</text>
+      <text x="16" y="62" fill="#64748B" font-size="10">Python / PyTorch · Real-Time Inference</text>
+    </g>
+
+    <!-- Service 5: Reviews & Social Proof -->
+    <g transform="translate(1064, 52)">
+      <rect x="0" y="0" width="232" height="76" rx="8" fill="#0F172A" stroke="#818CF8" stroke-width="1.2" />
+      <text x="16" y="26" fill="#A5B4FC" font-size="14" font-weight="700">Reviews &amp; Ratings</text>
+      <text x="16" y="46" fill="#94A3B8" font-size="11">Guest Favorite Badge, Fraud Filter</text>
+      <text x="16" y="62" fill="#64748B" font-size="10">Node.js / Go · NLP Moderation</text>
+    </g>
+
+    <!-- Bottom row services -->
+    <!-- Service 6: Realtime Chat & WebSockets -->
+    <g transform="translate(24, 140)">
+      <rect x="0" y="0" width="380" height="70" rx="8" fill="#0F172A" stroke="#475569" />
+      <text x="16" y="26" fill="#F8FAFC" font-size="13" font-weight="600">Messaging &amp; Presence Service</text>
+      <text x="16" y="44" fill="#94A3B8" font-size="11">Host-Guest Real-Time Chat · Push Notifications</text>
+      <text x="16" y="58" fill="#64748B" font-size="10">Go / WebSockets · Redis Pub/Sub</text>
+    </g>
+
+    <!-- Service 7: Payments & Escrow -->
+    <g transform="translate(424, 140)">
+      <rect x="0" y="0" width="390" height="70" rx="8" fill="#0F172A" stroke="#10B981" />
+      <text x="16" y="26" fill="#34D399" font-size="13" font-weight="600">Payment &amp; Escrow Gateway</text>
+      <text x="16" y="44" fill="#94A3B8" font-size="11">Stripe / Razorpay · Multi-Currency · Automated Host Payouts</text>
+      <text x="16" y="58" fill="#64748B" font-size="10">PCI-DSS Compliant Vault · Idempotent Ledger</text>
+    </g>
+
+    <!-- Service 8: User & Identity -->
+    <g transform="translate(834, 140)">
+      <rect x="0" y="0" width="462" height="70" rx="8" fill="#0F172A" stroke="#475569" />
+      <text x="16" y="26" fill="#F8FAFC" font-size="13" font-weight="600">User Identity &amp; Trust &amp; Safety</text>
+      <text x="16" y="44" fill="#94A3B8" font-size="11">OAuth2, Passkeys, ID Verification (Government ID KYC), Superhost Verification</text>
+      <text x="16" y="58" fill="#64748B" font-size="10">OIDC / OAuth 2.0 · Automated Identity ML</text>
+    </g>
+  </g>
+
+  <!-- Arrow Down from Microservices to Event Bus & Storage -->
+  <path d="M700 490 L700 516" stroke="#A855F7" stroke-width="2.5" stroke-dasharray="4,4" />
+  <polygon points="695,516 700,526 705,516" fill="#A855F7" />
+
+  <!-- ================= TIER 3: EVENT STREAMING & ASYNC QUEUES ================= -->
+  <g transform="translate(40, 530)">
+    <rect x="0" y="0" width="1320" height="76" rx="12" fill="#1E293B" stroke="#E11D48" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="16" y="12" width="220" height="24" rx="6" fill="#E11D48" opacity="0.2" />
+    <text x="24" y="28" fill="#FB7185" font-size="12" font-weight="700">3. EVENT STREAMING (KAFKA / MSK)</text>
+
+    <g transform="translate(250, 16)">
+      <rect x="0" y="0" width="230" height="44" rx="6" fill="#0F172A" stroke="#FB7185" />
+      <text x="12" y="20" fill="#F8FAFC" font-size="12" font-weight="600">topic: booking.created</text>
+      <text x="12" y="36" fill="#94A3B8" font-size="10">Triggers Ledger &amp; Calendar Hold</text>
+    </g>
+
+    <g transform="translate(500, 16)">
+      <rect x="0" y="0" width="230" height="44" rx="6" fill="#0F172A" stroke="#FB7185" />
+      <text x="12" y="20" fill="#F8FAFC" font-size="12" font-weight="600">topic: listing.updated</text>
+      <text x="12" y="36" fill="#94A3B8" font-size="10">Syncs Elasticsearch Index &amp; Cache</text>
+    </g>
+
+    <g transform="translate(750, 16)">
+      <rect x="0" y="0" width="230" height="44" rx="6" fill="#0F172A" stroke="#FB7185" />
+      <text x="12" y="20" fill="#F8FAFC" font-size="12" font-weight="600">topic: notification.send</text>
+      <text x="12" y="36" fill="#94A3B8" font-size="10">SMS, Email, WhatsApp Confirmation</text>
+    </g>
+
+    <g transform="translate(1000, 16)">
+      <rect x="0" y="0" width="296" height="44" rx="6" fill="#0F172A" stroke="#FB7185" />
+      <text x="12" y="20" fill="#F8FAFC" font-size="12" font-weight="600">topic: analytics.events</text>
+      <text x="12" y="36" fill="#94A3B8" font-size="10">Impression logs, Search queries, Clickstreams</text>
+    </g>
+  </g>
+
+  <!-- Arrow Down to Data Tier -->
+  <path d="M700 606 L700 630" stroke="#34D399" stroke-width="2.5" stroke-dasharray="4,4" />
+  <polygon points="695,630 700,640 705,630" fill="#34D399" />
+
+  <!-- ================= TIER 4: STORAGE, SEARCH & DATA LAKE ================= -->
+  <g transform="translate(40, 644)">
+    <rect x="0" y="0" width="1320" height="150" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="16" y="14" width="240" height="24" rx="6" fill="#10B981" opacity="0.2" />
+    <text x="24" y="30" fill="#34D399" font-size="12" font-weight="700">4. PERSISTENT STORAGE &amp; SEARCH TIER</text>
+
+    <!-- Storage 1: PostgreSQL Sharded -->
+    <g transform="translate(24, 48)">
+      <rect x="0" y="0" width="240" height="84" rx="8" fill="#0F172A" stroke="#3B82F6" stroke-width="1.2" />
+      <text x="16" y="24" fill="#60A5FA" font-size="13" font-weight="700">PostgreSQL / CockroachDB</text>
+      <text x="16" y="44" fill="#94A3B8" font-size="11">ACID Relational Core</text>
+      <text x="16" y="60" fill="#64748B" font-size="10">Geo-partitioned by Country/City</text>
+      <text x="16" y="74" fill="#64748B" font-size="10">Primary/Replica Multi-AZ</text>
+    </g>
+
+    <!-- Storage 2: Redis Cluster -->
+    <g transform="translate(284, 48)">
+      <rect x="0" y="0" width="240" height="84" rx="8" fill="#0F172A" stroke="#EF4444" stroke-width="1.2" />
+      <text x="16" y="24" fill="#F87171" font-size="13" font-weight="700">Redis Enterprise Cluster</text>
+      <text x="16" y="44" fill="#94A3B8" font-size="11">Sub-millisecond In-Memory</text>
+      <text x="16" y="60" fill="#64748B" font-size="10">Listing Caching, Redlock, Rate Limit</text>
+      <text x="16" y="74" fill="#64748B" font-size="10">Auto-failover Sentinel / Cluster</text>
+    </g>
+
+    <!-- Storage 3: Elasticsearch -->
+    <g transform="translate(544, 48)">
+      <rect x="0" y="0" width="240" height="84" rx="8" fill="#0F172A" stroke="#10B981" stroke-width="1.2" />
+      <text x="16" y="24" fill="#34D399" font-size="13" font-weight="700">OpenSearch / Elastic Cluster</text>
+      <text x="16" y="44" fill="#94A3B8" font-size="11">Full-Text &amp; Faceted Filtering</text>
+      <text x="16" y="60" fill="#64748B" font-size="10">Geo-Distance Polygon Queries</text>
+      <text x="16" y="74" fill="#64748B" font-size="10">Vector search for aesthetic match</text>
+    </g>
+
+    <!-- Storage 4: AWS S3 Object Storage -->
+    <g transform="translate(804, 48)">
+      <rect x="0" y="0" width="240" height="84" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-width="1.2" />
+      <text x="16" y="24" fill="#FBBF24" font-size="13" font-weight="700">AWS S3 / Cloudflare R2</text>
+      <text x="16" y="44" fill="#94A3B8" font-size="11">Immutable Object Storage</text>
+      <text x="16" y="60" fill="#64748B" font-size="10">High-Res Photos, Virtual Tours</text>
+      <text x="16" y="74" fill="#64748B" font-size="10">99.999999999% Durability (11 9s)</text>
+    </g>
+
+    <!-- Storage 5: ClickHouse OLAP -->
+    <g transform="translate(1064, 48)">
+      <rect x="0" y="0" width="232" height="84" rx="8" fill="#0F172A" stroke="#818CF8" stroke-width="1.2" />
+      <text x="16" y="24" fill="#A5B4FC" font-size="13" font-weight="700">ClickHouse / Snowflake</text>
+      <text x="16" y="44" fill="#94A3B8" font-size="11">Columnar OLAP Data Lake</text>
+      <text x="16" y="60" fill="#64748B" font-size="10">Host Earnings, Demand Forecasting</text>
+      <text x="16" y="74" fill="#64748B" font-size="10">A/B Experimentation Engine</text>
+    </g>
+  </g>
+
+  <!-- ================= TIER 5: CI/CD & OBSERVABILITY FOOTER ================= -->
+  <g transform="translate(40, 814)">
+    <rect x="0" y="0" width="1320" height="110" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5" />
+    <rect x="16" y="14" width="280" height="24" rx="6" fill="#3B82F6" opacity="0.2" />
+    <text x="24" y="30" fill="#60A5FA" font-size="12" font-weight="700">5. CI/CD, GITOPS &amp; OBSERVABILITY PIPELINE</text>
+
+    <!-- Block 1: GitOps -->
+    <g transform="translate(24, 48)">
+      <rect x="0" y="0" width="310" height="50" rx="6" fill="#1E293B" stroke="#475569" />
+      <text x="14" y="22" fill="#F8FAFC" font-size="12" font-weight="600">GitOps &amp; Infrastructure as Code</text>
+      <text x="14" y="38" fill="#94A3B8" font-size="10">Terraform · ArgoCD · GitHub Actions Multi-Stage Matrix</text>
+    </g>
+
+    <!-- Block 2: Zero-Downtime Deployment -->
+    <g transform="translate(350, 48)">
+      <rect x="0" y="0" width="310" height="50" rx="6" fill="#1E293B" stroke="#475569" />
+      <text x="14" y="22" fill="#F8FAFC" font-size="12" font-weight="600">Zero-Downtime Releases</text>
+      <text x="14" y="38" fill="#94A3B8" font-size="10">Canary &amp; Blue/Green Deployment with Flagger &amp; Istio</text>
+    </g>
+
+    <!-- Block 3: Observability -->
+    <g transform="translate(680, 48)">
+      <rect x="0" y="0" width="310" height="50" rx="6" fill="#1E293B" stroke="#475569" />
+      <text x="14" y="22" fill="#F8FAFC" font-size="12" font-weight="600">Telemetry &amp; Distributed Tracing</text>
+      <text x="14" y="38" fill="#94A3B8" font-size="10">OpenTelemetry · Datadog APM · Prometheus &amp; Grafana</text>
+    </g>
+
+    <!-- Block 4: AI Native Workflow -->
+    <g transform="translate(1010, 48)">
+      <rect x="0" y="0" width="286" height="50" rx="6" fill="#1E293B" stroke="#FF385C" />
+      <text x="14" y="22" fill="#FF385C" font-size="12" font-weight="700">AI-Assisted Workflow</text>
+      <text x="14" y="38" fill="#94A3B8" font-size="10">Subagent verification, linting &amp; accessibility</text>
+    </g>
+  </g>
+</svg>
