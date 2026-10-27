@@ -1,0 +1,286 @@
+.host-section {
+  width: 100%;
+}
+
+.host-profile-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px 32px;
+  margin-bottom: 32px;
+}
+
+.host-card-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.host-large-avatar-wrap {
+  position: relative;
+}
+
+.host-large-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.superhost-badge-icon {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.host-card-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.host-card-joined {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.host-card-stats {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.host-stat-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.host-stat-value {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.host-stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Host perks */
+.host-details-grid {
+  margin-bottom: 32px;
+}
+
+.host-perks-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.host-perk-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.perk-icon {
+  color: var(--text-dark);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.perk-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+
+.perk-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.host-bio {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-top: 8px;
+}
+
+.co-hosts-wrap {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.co-hosts-title {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-right: 6px;
+}
+
+.contact-host-btn {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+/* Things to know */
+.things-to-know {
+  margin-top: 24px;
+}
+
+.things-to-know-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 20px;
+}
+
+.things-col-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.things-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.things-list-item {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.rule-title {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.cancel-policy-title {
+  font-size: 14px;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.cancel-policy-detail {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Contact host modal */
+.contact-modal-content {
+  max-width: 560px;
+}
+
+.contact-modal-body {
+  padding: 24px;
+}
+
+.host-recipient-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.recipient-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.recipient-name {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.recipient-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.message-field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contact-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-main);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.contact-textarea:focus {
+  border-color: var(--text-dark);
+}
+
+.contact-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.send-msg-btn {
+  width: auto;
+  padding: 10px 24px;
+}
+
+.message-success-banner {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.message-success-banner h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.message-success-banner p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .host-profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .things-to-know-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
