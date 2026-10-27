@@ -1,146 +1,300 @@
-# Airbnb Listing Page Clone (Take-Home Task)
+# 🏡 Airbnb Listing Page Clone
 
-A pixel-perfect, accessible, and high-performance clone of the Airbnb property listing page **"Romantic Jacuzzi 1BHK Candolim | Mirashya UG10"**, built for the Playpower Labs Take-Home Engineering Assessment.
+<div align="center">
 
----
+<a href="https://airbnb-clone-umber-six.vercel.app/">
+  <img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&weight=700&size=28&pause=1000&color=FF5A5F&center=true&vCenter=true&width=700&lines=Discover+Your+Next+Getaway+%F0%9F%8C%8D;Pixel-Perfect+Airbnb+Experience+%E2%9C%A8;Built+with+React+%2B+Vite+%F0%9F%9A%80" alt="Animated project introduction" />
+</a>
 
-## 🌟 Key Features & Parity Overview
+**A pixel-perfect, interactive Airbnb property listing experience.**
 
-This application faithfully reproduces the reference application across visual aesthetics, interaction models, and motion:
+Recreating the property listing page **“Romantic Jacuzzi 1BHK Candolim | Mirashya UG10”** for the Playpower Labs Take-Home Engineering Assessment.
 
-### 1. View 1: Listing Page (Desktop-Optimized)
-- **Airbnb Header:** Signature Bélo logo, interactive search capsule (*"Anywhere · Any week · Add guests"*), host quick actions, and user profile dropdown.
-- **Header Actions:** Dynamic Save/Heart button with pop animation and Share modal with 1-click clipboard copy and social channels.
-- **Hero Photo Grid:** 5-photo responsive mosaic layout with rounded outer borders, hover zoom with subtle scrim dimming, and floating *"Show all photos"* trigger button.
-- **Property Details & Highlights:**
-  - Capacity pills (*"3 guests · 1 bedroom · 1 bed · 1 bathroom"*).
-  - Airbnb *Guest favorite* badge with laurel leaves, 4.98 rating score, and 128 review counter.
-  - Host summary card (*Hosted by Mirashya · Superhost · 4 years hosting*).
-  - Highlights list (*Private Jacuzzi, Dedicated workspace, Fast Wifi 150 Mbps, Keyless check-in, Free cancellation*).
-  - Sleeping arrangements cards with room iconography.
-  - Expandable *"About this space"* dialog with comprehensive property description.
-- **Amenities Section:**
-  - 10 key preview amenities with custom iconography.
-  - *"Show all 45 amenities"* modal with grouped categories (Bathroom, Bedroom & laundry, Entertainment, Heating & cooling, Kitchen, Outdoor, etc.) and real-time live search filter.
-- **Dual-Month Interactive Calendar:**
-  - Two-month side-by-side view with range highlight, night count calculation, and clear dates trigger.
-- **Sticky Booking Card:**
-  - Sticky right-column placement with live price calculations:
-    - Base price $\times$ nights
-    - Cleaning fee
-    - Airbnb service fee
-    - Total before taxes
-  - Expandable guest picker dropdown with Adults, Children, and Infants increment/decrement counters with maximum bounds enforcement.
-  - Radiant Airbnb gradient *"Reserve"* button with celebratory booking confirmation modal.
-- **Reviews Breakdown:**
-  - Category ratings (Cleanliness 5.0, Accuracy 4.9, Check-in 5.0, Communication 5.0, Location 4.8, Value 4.9) with progress bars.
-  - 6 verified guest review cards with helpful toggles.
-- **Interactive Candolim Map:**
-  - High-fidelity styled vector map of Candolim beach coastline, Fort Aguada road, and pulsating radar pin.
-- **Host Profile & Policies:**
-  - Host contact dialog, house rules, safety precautions, and cancellation policies.
+<br/>
 
-### 2. View 2: Fullscreen Photo Tour
-- Accessible via *"Show all photos"* or clicking any hero image.
-- Categorized photo filter pills (*"All (20)", "Living room", "Jacuzzi & Terrace", "Bedroom", "Kitchen & Dining", "Bathroom", "Pool & Exterior"*).
-- Masonry card layout with room tags and descriptions.
-- Clicking any image transitions seamlessly into View 3 (Lightbox) at that exact index.
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-FF5A5F?style=for-the-badge)](https://airbnb-clone-umber-six.vercel.app/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-Powered-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
+[![CSS](https://img.shields.io/badge/Vanilla_CSS-Custom_Styled-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-### 3. View 3: Single-Photo Lightbox Viewer
-- Minimalist fullscreen single-photo display.
-- Photo counter indicator (e.g., `1 / 20`).
-- Prev ($\leftarrow$) and Next ($\rightarrow$) navigation arrows with wrap-around support.
-- Full keyboard support:
-  - `ArrowLeft`: Navigate to previous photo
-  - `ArrowRight`: Navigate to next photo
-  - `Escape`: Return to Photo Tour
-- Bottom thumbnail strip for instant jumping between photos.
-
-### 4. Production-Scale Architecture Diagram
-- Built-in in-app architecture modal accessible via the header badge (*"Architecture Diagram"*).
-- Scalability strategy for a vacation-rental marketplace (Frontend CDN, Kubernetes microservices, Kafka event streaming, Sharded PostgreSQL, Redis Redlock, and Elasticsearch).
-- High-res vector diagram available at [`public/architecture_diagram.svg`](public/architecture_diagram.svg) and fully documented in [`ARCHITECTURE.md`](ARCHITECTURE.md).
+</div>
 
 ---
 
-## 🛠️ Technology Stack
+## 🌐 Live Demo
 
-- **Framework:** React 19 + Vite
-- **Styling:** Modular Vanilla CSS with comprehensive CSS custom properties / design tokens
-- **Icons:** `lucide-react`
-- **Typography:** Google Fonts (*Inter* & *Plus Jakarta Sans*)
+### ✨ [Explore the Airbnb Clone →](https://airbnb-clone-umber-six.vercel.app/)
+
+Experience the interactive property listing, browse photos, explore amenities, select dates, and try the booking interface.
 
 ---
 
-## 🚀 Getting Started
+## 🎨 Project Highlights
+
+| Feature | Description |
+|---|---|
+| 🎯 Pixel-Accurate UI | Carefully recreated layouts, typography, spacing, colors, and interactions. |
+| 🖼️ Interactive Gallery | Five-photo hero mosaic and fullscreen photo browsing experience. |
+| 📸 Photo Lightbox | Fullscreen image viewer with keyboard navigation and thumbnails. |
+| 🛁 Amenities Explorer | Searchable modal displaying 45 amenities grouped by category. |
+| 📅 Interactive Calendar | Dual-month date selection with date-range highlighting and night counting. |
+| 💳 Booking Calculator | Dynamic pricing based on selected nights, cleaning fees, and service fees. |
+| 👥 Guest Selector | Interactive counters for adults, children, and infants. |
+| ❤️ Save & Share | Interactive favorite button, share modal, and clipboard functionality. |
+| ⭐ Reviews Section | Guest ratings, category breakdowns, and review cards. |
+| 📍 Location & Host | Property location visualization, host details, and policy sections. |
+| 🏗️ System Architecture | Production-scale marketplace architecture design. |
+
+---
+
+## 🖥️ Three Interactive Views
+
+### 01 — 🏠 Property Listing Page
+
+The main experience recreates the Airbnb property details page, including:
+
+- Signature-style header and search capsule.
+- Responsive five-image hero gallery.
+- Property highlights, host details, and sleeping arrangements.
+- Expandable property description.
+- Searchable, categorized amenities modal.
+- Interactive two-month calendar.
+- Sticky booking card with dynamic price calculations.
+- Guest selection and reservation confirmation modal.
+- Reviews, location, house rules, and cancellation information.
+
+### 02 — 🖼️ Fullscreen Photo Tour
+
+Explore the property's photo collection through an immersive gallery.
+
+- Browse all 20 property photos.
+- Filter images by room or property area.
+- Explore categories such as Living Room, Jacuzzi & Terrace, Bedroom, Kitchen & Dining, Bathroom, and Pool & Exterior.
+- Open any image directly in the fullscreen lightbox.
+
+### 03 — 🔍 Single-Photo Lightbox
+
+A dedicated photo-viewing experience featuring:
+
+- Fullscreen image display.
+- Previous and next navigation.
+- Keyboard support using `ArrowLeft`, `ArrowRight`, and `Escape`.
+- Image counter and thumbnail navigation.
+- Smooth transitions between the photo tour and lightbox.
+
+---
+
+## 🏗️ Architecture & Engineering
+
+Beyond the frontend, this project includes a conceptual architecture design for a large-scale vacation-rental marketplace.
+
+### Architecture Components
+
+- **Frontend Delivery:** CDN-based content delivery and image optimization.
+- **Application Services:** Containerized services orchestrated with Kubernetes.
+- **Booking Integrity:** PostgreSQL range constraints and Redis-based locking strategies.
+- **Event Streaming:** Apache Kafka for asynchronous event processing.
+- **Search & Discovery:** Elasticsearch for property search and filtering.
+- **Distributed Transactions:** Saga pattern for coordinating multi-service workflows.
+
+📐 **Architecture resources**
+
+- [View Architecture Documentation](ARCHITECTURE.md)
+- [View Architecture Diagram](public/architecture_diagram.svg)
+
+*Note: The architecture is a design proposal accompanying the frontend assessment, not a claim that these backend services have been deployed.*
+
+---
+
+## 🧰 Technology Stack
+
+<div align="center">
+
+| Technology | Purpose |
+|---|---|
+| ⚛️ React 19 | Component-based UI development |
+| ⚡ Vite | Development server and production build |
+| 🎨 Vanilla CSS | Custom styling, responsive layouts, and animations |
+| 🧩 lucide-react | Consistent iconography |
+| 🔤 Inter & Plus Jakarta Sans | Typography |
+| 🚀 Vercel | Frontend deployment |
+| 🐙 GitHub | Source control and project hosting |
+
+</div>
+
+---
+
+## 🤖 AI-Native Development Workflow
+
+The project follows a structured AI-assisted development workflow, with prompt documentation and specialized skills for reviewing implementation quality.
+
+### Custom AI Skills
+
+| Skill | Responsibility |
+|---|---|
+| 🎯 `pixel-parity-verifier` | Reviews visual similarity, spacing, colors, and transitions. |
+| ♿ `accessibility-checker` | Reviews keyboard navigation, focus handling, and accessibility attributes. |
+| 🧹 `code-quality-auditor` | Reviews component organization, modularity, and code quality. |
+
+📄 **Prompt history:** [`AI_PROMPT_SEQUENCE.md`](AI_PROMPT_SEQUENCE.md)
+
+📂 **Custom skills:** [`.agents/skills/`](.agents/skills/)
+
+---
+
+## 🚀 Run Locally
+
+Want to explore or run the project on your machine? Follow these steps.
 
 ### Prerequisites
-- Node.js (v18+)
-- npm (v9+)
 
-### Installation & Local Run
+- Node.js 18 or later.
+- npm 9 or later.
+- Git.
+
+### 1. Clone the repository
+
 ```bash
-# Install dependencies
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd Airbnb-clone
+```
+
+Replace `<YOUR_GITHUB_REPOSITORY_URL>` with your actual repository URL.
+
+### 2. Install dependencies
+
+```bash
 npm install
+```
 
-# Start local development server
+### 3. Start the development server
+
+```bash
 npm run dev
+```
 
-# Build for production
+### 4. Open the application
+
+Visit:
+
+```text
+http://localhost:5173
+```
+
+### 5. Create a production build
+
+```bash
 npm run build
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+The optimized production output will be generated in the `dist/` directory.
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-```
+```text
+Airbnb-clone/
+│
 ├── .agents/
 │   └── skills/
-│       ├── code-quality-auditor/SKILL.md
-│       ├── accessibility-checker/SKILL.md
-│       └── pixel-parity-verifier/SKILL.md
+│       ├── code-quality-auditor/
+│       ├── accessibility-checker/
+│       └── pixel-parity-verifier/
+│
 ├── public/
 │   ├── favicon.svg
 │   └── architecture_diagram.svg
+│
 ├── src/
 │   ├── assets/
 │   ├── components/
-│   │   ├── Header.jsx / Header.css
-│   │   ├── ListingHeader.jsx / ListingHeader.css
-│   │   ├── HeroGrid.jsx / HeroGrid.css
-│   │   ├── ListingInfo.jsx / ListingInfo.css
-│   │   ├── Amenities.jsx / AmenitiesModal.jsx / Amenities.css
-│   │   ├── CalendarSection.jsx / CalendarSection.css
-│   │   ├── BookingCard.jsx / BookingCard.css
-│   │   ├── ReviewsSection.jsx / ReviewsSection.css
-│   │   ├── LocationSection.jsx / LocationSection.css
-│   │   ├── HostSection.jsx / HostSection.css
-│   │   ├── PhotoTour.jsx / PhotoTour.css
-│   │   ├── Lightbox.jsx / Lightbox.css
-│   │   ├── ShareModal.jsx / ShareModal.css
-│   │   ├── ReserveConfirmationModal.jsx / ReserveConfirmationModal.css
-│   │   ├── ArchitectureModal.jsx / ArchitectureModal.css
-│   │   └── Footer.jsx / Footer.css
+│   │   ├── Header.jsx
+│   │   ├── ListingHeader.jsx
+│   │   ├── HeroGrid.jsx
+│   │   ├── ListingInfo.jsx
+│   │   ├── Amenities.jsx
+│   │   ├── AmenitiesModal.jsx
+│   │   ├── CalendarSection.jsx
+│   │   ├── BookingCard.jsx
+│   │   ├── ReviewsSection.jsx
+│   │   ├── LocationSection.jsx
+│   │   ├── HostSection.jsx
+│   │   ├── PhotoTour.jsx
+│   │   ├── Lightbox.jsx
+│   │   ├── ShareModal.jsx
+│   │   ├── ReserveConfirmationModal.jsx
+│   │   ├── ArchitectureModal.jsx
+│   │   └── Footer.jsx
+│   │
 │   ├── data/
 │   │   └── listingData.js
-│   ├── App.jsx / App.css
+│   │
+│   ├── App.jsx
+│   ├── App.css
 │   ├── index.css
 │   └── main.jsx
+│
 ├── ARCHITECTURE.md
 ├── AI_PROMPT_SEQUENCE.md
 ├── package.json
 └── README.md
 ```
 
+*This tree summarizes the intended organization; filenames may differ slightly in the actual repository.*
+
 ---
 
-## 📄 Submission Notes
+## ♿ Accessibility & User Experience
 
-Per instructions:
-1. Complete code, assets, and architecture diagram are packaged into `airbnb-clone-submission.zip`.
-2. AI-assisted prompt sequence is documented in `AI_PROMPT_SEQUENCE.md`.
-3. AI sub-agent/skill configurations are included in `.agents/skills/`.
-4. Code will NOT be pushed to any public repository.
+Accessibility and interaction quality were considered throughout the implementation.
+
+- Keyboard-based photo navigation.
+- Escape-key handling for returning between views.
+- Background scroll locking for fullscreen overlays.
+- Focus management and ARIA attributes.
+- Interactive controls with clear user feedback.
+- Responsive layouts and hover interactions.
+
+---
+
+## 🎯 Engineering Challenges & Learnings
+
+One of the main engineering challenges was coordinating navigation across the listing page, fullscreen photo tour, and lightbox.
+
+The solution was to centralize view navigation using a shared view-mode state in `App.jsx`. This helped preserve the photo index and selected room category when returning from the lightbox.
+
+The project also provided practical experience in:
+
+- Building reusable React components.
+- Managing interactive UI state.
+- Implementing keyboard event handling.
+- Creating responsive layouts with custom CSS.
+- Documenting system architecture and AI-assisted workflows.
+
+---
+
+## 📦 Assessment Submission
+
+The project was prepared for the Playpower Labs Take-Home Engineering Assessment.
+
+- Complete project source code and assets.
+- Architecture diagram and supporting documentation.
+- AI prompt sequence and custom skill configurations.
+- Publicly deployed frontend demo.
+
+---
+
+<div align="center">
+
+### 💗 Built with attention to detail.
+
+**Designed to recreate the experience. Built to demonstrate the engineering.**
+
+[🌐 Live Demo](https://airbnb-clone-umber-six.vercel.app/) · [📐 Architecture](ARCHITECTURE.md) · [🤖 AI Workflow](AI_PROMPT_SEQUENCE.md)
+
+<br/>
+
+*Thank you for visiting this project!*
+
+</div>
