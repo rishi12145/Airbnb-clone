@@ -1,0 +1,30 @@
+/* Main Airbnb App Container */
+.airbnb-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.listing-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 370px;
+  gap: 80px;
+  position: relative;
+  margin-top: 32px;
+}
+
+.listing-left-column {
+  min-width: 0;
+}
+
+.listing-right-column {
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .listing-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
