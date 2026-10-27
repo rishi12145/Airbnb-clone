@@ -1,0 +1,183 @@
+.location-section {
+  width: 100%;
+}
+
+.location-subhead {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+/* Custom Vector Map Container */
+.custom-map-card {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  background-color: #E5E9EC;
+}
+
+.map-canvas-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.25s ease-out;
+  transform-origin: center center;
+}
+
+.candolim-map-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Pin Marker */
+.map-pin-container {
+  position: absolute;
+  top: 52%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pin-radar-ring {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 56, 92, 0.18);
+  border: 1px solid rgba(255, 56, 92, 0.35);
+  animation: radarPulse 2.5s infinite ease-out;
+}
+
+.pin-home-marker {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pin-icon-inner {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--airbnb-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(255, 56, 92, 0.45);
+  border: 2px solid #FFFFFF;
+}
+
+.pin-bubble-card {
+  position: absolute;
+  top: calc(100% + 8px);
+  background-color: #FFFFFF;
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pin-listing-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.pin-listing-exact {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+@keyframes radarPulse {
+  0% { transform: scale(0.6); opacity: 0.9; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Controls */
+.map-controls {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-main);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.map-ctrl-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dark);
+  transition: background-color var(--transition-fast);
+}
+
+.map-ctrl-btn:hover {
+  background-color: var(--bg-subtle);
+}
+
+.ctrl-divider {
+  height: 1px;
+  background-color: var(--border-light);
+}
+
+/* Neighborhood details */
+.neighborhood-info {
+  margin-top: 24px;
+}
+
+.neighborhood-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.neighborhood-desc {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.proximity-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.proximity-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.pill-icon {
+  color: var(--airbnb-primary);
+}
